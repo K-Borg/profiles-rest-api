@@ -34,3 +34,17 @@ class HelloApiView(APIView):
                 serializer.errors,
                 status=status.HTTP_400_BAD_REQUEST
             )
+
+    #pk is for the object id
+    def put(self, request, pk=None):
+        """Handle updating an object. Overwrites."""
+        return Response({'method': 'PUT'})
+
+    def patch(self, request, pk=None):
+        """Handle a partial update of an object. Only updating the fields
+        provided in the request."""
+        return Response({'method': 'PATCH'})
+
+    def delete(self, request, pk=None):
+        """Delete an object."""
+        return Response({'method': 'DELETE'})
