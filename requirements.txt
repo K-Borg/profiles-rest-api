@@ -1,4 +1,4 @@
 #List all your required python packages here and the version needed for this project
 #if you do not specify the version, it will automatically choose the latest version
-django==2.2
+django==2.2.13
 djangorestframework==3.9.2
